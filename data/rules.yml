@@ -31,3 +31,8 @@ rules:
     - requested_slot: null
   # The actions we want to run when the form is submitted.
   - action: action_submit
+
+- rule: out_of_scope
+  steps:
+  - intent: fallback_words
+  - action: utter_out_of_scope

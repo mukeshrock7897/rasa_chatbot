@@ -175,3 +175,18 @@ nlu:
     - open a video
     - open sorngs url 
     - play video song
+
+- intent: fallback_words
+  examples: |
+    - who is india prime minister
+    - what is color
+    - speak in hindi
+    - what is name of this animal
+    - what is this
+    - why we use this
+    - which animal
+    - which plants
+    - speak in others language
+    - मैं सबसे अच्छा नहीं हूँ
+    - मेरा नाम राम है मैं एक मजदूर हूँ
+    - हम, मैं, मेरा, हमारा, हम, आप, वे

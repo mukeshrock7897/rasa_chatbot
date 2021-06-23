@@ -11,6 +11,7 @@ intents:
 - bot_challenge
 - tell_name
 - play_song
+- fallback_words
 
 - my_name:
     use_entities:
@@ -73,6 +74,9 @@ responses:
   utter_details_thanks:
   - text: "Thanks for the providing me details \nName: {Name} \nEmail: {Email} \n\
       Profession: {Profession} \nPlace: {Place} "
+  utter_out_of_scope:
+  - text: "Sorry, I didn't get what you said , Please rephrase what you said."
+
 actions:
 - action_submit
 - action_video
