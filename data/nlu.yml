@@ -166,3 +166,12 @@ nlu:
     - i am from [chandigarh]{"entity":"place","value":"chandigarh"}
     - i am from [bhopal]{"entity":"place","value":"bhopal"}
     - i am from [shimla]{"entity":"place","value":"shimla"}
+
+
+- intent: play_song
+  examples: |
+    - play song
+    - open song
+    - open a video
+    - open sorngs url 
+    - play video song

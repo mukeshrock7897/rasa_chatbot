@@ -10,6 +10,8 @@ intents:
 - mood_unhappy
 - bot_challenge
 - tell_name
+- play_song
+
 - my_name:
     use_entities:
     - name
@@ -28,16 +30,16 @@ entities:
 - profess
 - place
 slots:
-  email:
-    type: text
-    influence_conversation: false
   name:
     type: text
     influence_conversation: false
-  place:
+  email:
     type: text
     influence_conversation: false
   profess:
+    type: text
+    influence_conversation: false
+  place:
     type: text
     influence_conversation: false
 responses:
@@ -60,9 +62,36 @@ responses:
   - text: What is your name ?
   utter_ask_email:
   - text: What is your email id ?
-  utter_ask_profession:
+  utter_ask_profess:
   - text: What is your profession ?
-  utter_ask_location:
+  utter_ask_place:
   - text: What is your location ?
   utter_thanks:
   - text: Thanks for providing the values
+  utter_nice:
+  - text: Nice!!!!!
+  utter_details_thanks:
+  - text: "Thanks for the providing me details \nName: {Name} \nEmail: {Email} \n\
+      Profession: {Profession} \nPlace: {Place} "
+actions:
+- action_submit
+- action_video
+forms:
+  user_details_form:
+    name:
+    - type: from_entity
+      entity: name
+    
+    email:
+    - type: from_entity
+      entity: email
+
+    profess:
+    - type: from_entity
+      entity: profess
+    
+    place:
+    - type: from_entity
+      entity: place
+      
+    
