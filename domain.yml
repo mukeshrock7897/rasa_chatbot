@@ -1,0 +1,68 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- tell_name
+- my_name:
+    use_entities:
+    - name
+- email_id:
+    use_entities:
+    - email
+- profession:
+    use_entities:
+    - profess
+- location:
+    use_entities:
+    - place
+entities:
+- name
+- email
+- profess
+- place
+slots:
+  email:
+    type: text
+    influence_conversation: false
+  name:
+    type: text
+    influence_conversation: false
+  place:
+    type: text
+    influence_conversation: false
+  profess:
+    type: text
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye, have a good day!!!!!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_name:
+  - text: My name is Rasa
+  utter_ask_name:
+  - text: What is your name ?
+  utter_ask_email:
+  - text: What is your email id ?
+  utter_ask_profession:
+  - text: What is your profession ?
+  utter_ask_location:
+  - text: What is your location ?
+  utter_thanks:
+  - text: Thanks for providing the values

@@ -1,0 +1,168 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - wooo
+    - woh
+    - nice
+    - good
+    - cheer up
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: tell_name
+  examples: |
+    - what is your name?
+    - tell me your name
+    - what should i call you
+    - what others call you
+    - what's your name
+    - your name
+    - please tell me your name
+
+- intent: my_name
+  examples: |
+    - my name is [mukesh]{"entity":"name","value":"mukesh"}
+    - my name is [bakrudeen]{"entity":"name","value":"bakrudeen"}
+    - my name is [anirudh]{"entity":"name","value":"anirudh"}
+    - my name is [radha]{"entity":"name","value":"radha"}
+    - my name is [geeta]{"entity":"name","value":"geeta"}
+    - [mukesh]{"entity":"name","value":"mukesh"} is my name
+    - [bakrudeen]{"entity":"name","value":"bakrudeen"} is my name
+    - [anirudh]{"entity":"name","value":"anirudh"} is my name
+    - [seema]{"entity":"name","value":"seema"} is my name
+    - [bakrudeen]{"entity":"name","value":"bakrudeen"} this side
+    - [anirudh]{"entity":"name","value":"anirudh"} this side
+    - [seema]{"entity":"name","value":"seema"} this side
+    - my name is [vikas]{"entity":"name","value":"vikas"}
+    - my name is [seema]{"entity":"name","value":"seema"}
+    - my name is [sonam]{"entity":"name","value":"sonam"}
+
+- intent: email_id
+  examples: |
+    - my email id is [mukesh@gmail.com]{"entity":"email"}
+    - my email id is [bakrudeen@gmail.com]{"entity":"email"}
+    - my email id is [anirudh@gmail.com]{"entity":"email"}
+    - [geeta@gmail.com]{"entity":"email"} is my email id
+    - [vikas@gmail.com]{"entity":"email"} is my email id
+    - [sonam@gmail.com]{"entity":"email"} is my email id
+
+- intent: profession
+  examples: |
+    - i am [engineer]{"entity":"profess","value":"engineer"}
+    - i am [doctor]{"entity":"profess","value":"doctor"}
+    - i am [teacher]{"entity":"profess","value":"engineer"}
+    - i am [lawyer]{"entity":"profess","value":"lawyer"}
+    - i am [advocate]{"entity":"profess","value":"advocate"}
+    - i am [machenic]{"entity":"profess","value":"machenic"}
+    - i am [dancer]{"entity":"profess","value":"dancer"}
+    - i am [driver]{"entity":"profess","value":"driver"}
+    - i am [mentor]{"entity":"profess","value":"mentor"}
+
+- intent: location
+  examples: |
+    - i am from [banglore]{"entity":"place","value":"banglore"}
+    - i am from [chennai]{"entity":"place","value":"chennai"}
+    - i am from [mumbai]{"entity":"place","value":"mumbai"}
+    - i am from [pune]{"entity":"place","value":"pune"}
+    - i am from [karnatka]{"entity":"place","value":"karnatka"}
+    - i am from [tamilnadu]{"entity":"place","value":"tamilnadu"}
+    - i am from [luckonw]{"entity":"place","value":"luckonw"}
+    - i am from [delhi]{"entity":"place","value":"delhi"}
+    - i am from [andhra pradesh]{"entity":"place","value":"andhra pradesh"}
+    - i am from [goa]{"entity":"place","value":"goa"}
+    - i am from [hyderabad]{"entity":"place","value":"hyderabad"}
+    - i am from [nagpur]{"entity":"place","value":"nagpur"}
+    - i am from [kerala]{"entity":"place","value":"kerala"}
+    - i am from [bengaluru]{"entity":"place","value":"bengaluru"}
+    - i am from [Kolkata]{"entity":"place","value":"Kolkata"}
+    - i am from [Jaipur]{"entity":"place","value":"Jaipur"}
+    - i am from [chandigarh]{"entity":"place","value":"chandigarh"}
+    - i am from [bhopal]{"entity":"place","value":"bhopal"}
+    - i am from [shimla]{"entity":"place","value":"shimla"}

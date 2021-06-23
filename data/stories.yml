@@ -1,0 +1,68 @@
+version: "2.0"
+
+stories:
+
+- story: path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_goodbye
+
+- story: path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tell_name
+  - action: utter_name
+
+- story: path 4
+  steps:
+  - intent: tell_name
+  - action: utter_name
+  - action: utter_ask_name
+  - intent: my_name
+    entities:
+    - name : "mukesh"
+  - slot_was_set:
+    - name : "mukesh"
+
+  - action: utter_ask_email
+  - intent: email_id
+    entities:
+    - email : "mukesh@gmail.com"
+  - slot_was_set:
+    - email : "mukesh@gmail.com"
+
+  - action: utter_ask_profession
+  - intent: profession
+    entities:
+    - profess : "engineer"
+  - slot_was_set:
+    - profess : "engineer"
+
+  - action: utter_ask_location
+  - intent: location
+    entities:
+    - place : "banglore"
+  - slot_was_set:
+    - place : "banglore"
+
+  - action: utter_thanks
