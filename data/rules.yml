@@ -36,3 +36,8 @@ rules:
   steps:
   - intent: fallback_words
   - action: utter_out_of_scope
+
+- rule: respond to chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat

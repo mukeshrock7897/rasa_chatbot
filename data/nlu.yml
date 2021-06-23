@@ -190,3 +190,17 @@ nlu:
     - मैं सबसे अच्छा नहीं हूँ
     - मेरा नाम राम है मैं एक मजदूर हूँ
     - हम, मैं, मेरा, हमारा, हम, आप, वे
+
+- intent: chitchat/ask_population
+  examples: |
+    - what is population of india?
+    - population in india
+    - how much population in india?
+    - what is population in our country?
+
+- intent: chitchat/ask_wheater
+  examples: |
+    - what is weather?
+    - i want to know the weather 
+    - what is weather in my area?
+    - i like sunny days

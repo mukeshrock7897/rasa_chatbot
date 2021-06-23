@@ -12,6 +12,7 @@ intents:
 - tell_name
 - play_song
 - fallback_words
+- chitchat
 
 - my_name:
     use_entities:
@@ -76,6 +77,18 @@ responses:
       Profession: {Profession} \nPlace: {Place} "
   utter_out_of_scope:
   - text: "Sorry, I didn't get what you said , Please rephrase what you said."
+  utter_chitchat/ask_population:
+  - text: india having 135 crore population
+  - text: 135 crore population
+  - text: india is 2nd largest population country in the world
+  - text: india population is heavey compare to neighbours country
+  utter_chitchat/ask_weather:
+  - text: i evening will be quite dark sky
+  - text: i am quite sure about today weather 
+  - text: in afternoon will be sunny 
+  - text: i am not sure full week weather
+  - text: i think today will be sunny
+  - text: in morning will be sunshine
 
 actions:
 - action_submit
